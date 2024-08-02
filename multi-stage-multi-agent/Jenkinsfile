@@ -8,7 +8,9 @@ pipeline {
       steps {
         sh 'mvn --version'
       
-        sh 'mvn compile'
+        sh 'mvn compile '
+
+        sh 'mv -e'
 
         sh 'java -cp target/classes hellowWorld.java'
     }
