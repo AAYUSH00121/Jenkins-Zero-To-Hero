@@ -10,8 +10,8 @@ pipeline {
       
         sh 'mvn compile'
 
-        // Run the Java program
         sh 'java -cp target/classes HelloWorld'
+    }
     }
     stage('Front-end') {
       agent {
@@ -23,4 +23,4 @@ pipeline {
     }
   }
 }
-}
+
