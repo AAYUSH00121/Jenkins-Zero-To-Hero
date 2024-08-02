@@ -13,7 +13,7 @@ pipeline {
                 sh 'mvn compile'
 
                 // Run the Java program (Ensure the class name is correct)
-                sh 'java -cp target/classes HelloWorld'  // Adjust the class name or add package if needed
+                sh 'java -cp target/classes hellowWorld'  // Adjust the class name or add package if needed
             }
         }
         stage('Front-end') {
