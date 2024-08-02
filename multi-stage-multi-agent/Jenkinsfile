@@ -12,7 +12,7 @@ pipeline {
 
         sh 'mv -e'
 
-        sh 'java -cp target/classes hellowWorld.java'
+        sh 'java -cp target/classes hellowWorld'
     }
     }
     stage('Front-end') {
