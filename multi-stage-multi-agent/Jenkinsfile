@@ -10,7 +10,7 @@ pipeline {
       
         sh 'mvn compile'
 
-        sh 'java -cp target/classes HelloWorld'
+        sh 'java -cp target/classes hellowWorld.java'
     }
     }
     stage('Front-end') {
