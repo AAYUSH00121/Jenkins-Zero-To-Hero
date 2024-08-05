@@ -8,13 +8,8 @@ pipeline {
             steps {
                 // Check Maven version
                 sh 'mvn --version'
-                
-                // Compile the Java program using Maven
-                sh 'mvn compile'
-
-                // Run the Java program (Ensure the class name is correct)
-                sh 'java -cp target/classes hellowWorld'  // Adjust the class name or add package if needed
-            }
+                sh 'javac HelloWorld.java'
+                sh 'java HelloWorld'
         }
         stage('Front-end') {
             agent {
