@@ -9,7 +9,7 @@ pipeline {
                 // Check Maven version
                 sh 'mvn --version'
                 sh 'ls -la'
-                sh 'javac src/HelloWorld.java'
+                sh 'javac multi-stage-multi-agent/src/HelloWorld.java'
                 sh 'java -cp src HelloWorld'
         }
         }
