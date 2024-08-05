@@ -8,8 +8,9 @@ pipeline {
             steps {
                 // Check Maven version
                 sh 'mvn --version'
-                sh 'javac HelloWorld.java'
-                sh 'java HelloWorld'
+                sh 'ls -la'
+                sh 'javac src/HelloWorld.java'
+                sh 'java -cp src HelloWorld'
         }
         }
         stage('Front-end') {
