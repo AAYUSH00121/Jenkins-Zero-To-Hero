@@ -10,7 +10,7 @@ pipeline {
                 sh 'mvn --version'
                 sh 'ls -la'
                 sh 'javac multi-stage-multi-agent/src/HelloWorld.java'
-                sh 'java multi-stage-multi-agent/src/HelloWorld'
+                sh 'java multi-stage-multi-agent/src HelloWorld'
         }
         }
         stage('Front-end') {
